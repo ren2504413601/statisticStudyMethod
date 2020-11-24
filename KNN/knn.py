@@ -119,7 +119,7 @@ class KNN(KDTree):
         
 if __name__ == "__main__":
     start = time.time()
-    datas = load_mnist('_Data/mnist.txt')
+    datas = load_mnist('statisticStudyMethod/_Data/mnist.txt')
     Train, Test= train_test_split(datas, 0.8)
     knn = KNN(K = 1, data = Train)
     knn.train()
